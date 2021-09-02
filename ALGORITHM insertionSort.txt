@@ -3,7 +3,12 @@ VAR
 n, i, j, key : INTEGER;
 arr : ARRAY_OF INTEGER;
 BEGIN
-
+//read array
+ Read(n);
+ 
+ FOR i FROM 0 TO n-1 STEP 1 DO
+   Read ( arr[i]);      
+ END_FOR
  FOR i FROM 1 TO n-1 STEP 1 DO
    key := arr[i];
    j := i - 1;   
